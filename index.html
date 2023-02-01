@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <ul style="list-style: none; display: flex; gap: 5%;">
-        <li>
-            <a href="./index.html">HOME</a>
-        </li> 
-        <li>
-            <a href="./Blog.html">BLOG</a>
-        </li> 
-        <li>
-            <a href="./Contact.html">Contact</a>
-        </li> 
+  </head>
+  <body style="background-color: rgb(172, 172, 172)">
+    <ul style="list-style: none; display: flex; gap: 5%">
+      <li>
+        <a href="./index.html">HOME</a>
+      </li>
+      <li>
+        <a href="./Blog.html">BLOG</a>
+      </li>
+      <li>
+        <a href="./Contact.html">Contact</a>
+      </li>
     </ul>
-</body>
+    <div style="display: flex">
+      <fieldset>
+        <legend>რეგისტრაცია</legend>
+        <form style="width: 50%;">
+        <div>
+          <label for="">Name</label>
+          <input name="Login" placeholder="Name" required size="10" />
+          <input type="text" placeholder="Surname" required size="10" />
+        </div>
+        <div>
+          <label for="">Username</label>
+          <input type="text" maxlength="10" required />
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input type="Password" maxlength="10" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="@email.com" required />
+        </div>
+        <div>
+          <label>Number</label>
+          <input type="number" />
+        </div>
+        <div>
+          <label>Date</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label for="">Male</label>
+          <input type="radio" required />
+        </div>
+        <div>
+          <label for="">Female</label>
+          <input type="radio" required />
+        </div>
+        <div>
+          <button type="submit" formmethod="get" formaction="./index.html">
+            Registracion
+          </button>
+          <button type="reset">Reset</button>
+        </div>
+    </form>
+      </fieldset>
+      <img src="./Image/index/Untitled.jpg" alt="" />
+    </div>
+  </body>
 </html>
